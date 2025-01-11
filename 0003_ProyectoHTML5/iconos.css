@@ -1,0 +1,94 @@
+.icono
+{
+    font-size: 1em;
+    background-color: #4f64eb;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080, 
+                10px 1px 12 px #00000080, 
+                2px 2px 3px #00000080,
+                2px 2px 10px #00000080,
+                2px 2px 2px #00000080, 
+                10px 1px 12px #00000080, 
+                2px 2px 3px #00000080,
+                2px 2px 10px #00000080,
+                2px 2px 3px #00000080,
+                2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080,
+                inset 2px 2px 10px #00000080;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin: 0 8px;
+    animation: animate 2s linear infinite;
+    text-shadow: 0 0 50px #0026ff, 
+                 0 0 100px #0026ff,
+                 0 0 150px #0026ff, 
+                 0 0 200px #0026ff,
+                 0 0 250px #0026ff, 
+                 0 0 300px #0026ff,
+                 0 0 350px #0026ff, 
+                 0 0 400px #0026ff,
+                 0 0 450px #0026ff, 
+                 0 0 500px #0026ff;
+}
+.icono:nth-child(1)
+{
+    animation-delay: 0.1s;
+}
+.icono:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.icono:nth-child(3)
+{
+    animation-delay: 0.3s;
+}
+.icono:nth-child(4)
+{
+    animation-delay: 0.4s;
+}
+.icono:nth-child(5)
+{
+    animation-delay: 0.5s;
+}
+.icono:nth-child(6)
+{
+    animation-delay: 0.6s;
+}
+.icono:nth-child(7)
+{
+    animation-delay: 0.7s;
+}
+.icono:nth-child(8)
+{
+    animation-delay: 0.8s;
+}
+.icono:nth-child(9)
+{
+    animation-delay: 0.9s;
+}
+.icono:nth-child(10)
+{
+    animation-delay: 1.0s;
+}
+@keyframes animate
+{
+    from
+    {
+        filter: hue-rotate(-45deg);
+    }
+    to
+    {
+        filter: hue-rotate(-5deg);
+    }
+}
+.container{
+    background-color: black;
+}
