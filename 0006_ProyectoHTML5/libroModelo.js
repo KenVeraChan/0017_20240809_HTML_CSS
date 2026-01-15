@@ -3,6 +3,7 @@ $(document).ready(function()
         var paginaMovimiento=0; //Variable para controlar la página en la que estamos
         let posicionX=0;
         let posicionY=0;
+        let guardaPagina=0;
         for(var index=0;index<$('.pagina').length;index++){
             $(".pagina").each(function(index) {    //Coloca las paginas en orden de colocación de etiqueta HTML
                 $(this).css("z-index", $('.pagina').length-index);
@@ -21,9 +22,10 @@ $(document).ready(function()
             $(this).toggleClass('rotado');
             $(this).toggleClass('decolorado');
             $(this).toggleClass('invisible');
+            $('.abrirLibro:eq('+paginaMovimiento+')').toggleClass('desaparece');
+                guardaPagina=paginaMovimiento;
             paginaMovimiento++;   
             $(this).css("z-index", $('.pagina').length+paginaMovimiento); //Ajusta el z-index para que las paginas ya pasadas queden debajo
-            //alert("Página siguiente número: " + paginaMovimiento);
             }
             else if(posicionX < (($("#libroAbierto").width()/2)+(parseInt($("#libroAbierto").css("margin-left")))) && posicionX>=0)
             {  
@@ -34,8 +36,12 @@ $(document).ready(function()
             $(this).toggleClass('decolorado');
             $(this).toggleClass('invisible');
             paginaMovimiento--;
+                if(guardaPagina===paginaMovimiento)
+                {
+                    $('.abrirLibro:eq('+paginaMovimiento+')').toggleClass('aparece');
+                }
             $(this).css("z-index", $('.pagina').length-paginaMovimiento); //Ajusta el z-index para que las paginas ya pasadas queden debajo
-            //alert("Página anterior número: " + paginaMovimiento);
             }
+            alert("Página número: " + paginaMovimiento + "Pagina guardada: " + guardaPagina );
         });
     });
