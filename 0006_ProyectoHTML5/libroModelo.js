@@ -42,6 +42,6 @@ $(document).ready(function()
                 }
             $(this).css("z-index", $('.pagina').length-paginaMovimiento); //Ajusta el z-index para que las paginas ya pasadas queden debajo
             }
-            alert("Página número: " + paginaMovimiento + "Pagina guardada: " + guardaPagina );
+            //alert("Página número: " + paginaMovimiento + "Pagina guardada: " + guardaPagina );
         });
     });
